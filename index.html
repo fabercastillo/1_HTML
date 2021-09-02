@@ -5,6 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RED NAXELA</title>
+
+    <!--aplicar estilos... solo en el encabezado-->
+    <!-- border borde externo
+         Padding borde interno-->
+   <style>/* 
+        table{
+            border-collapse: collapse;
+            width: 30%;
+        }
+        th,td{
+            border: 2px solid green;
+            padding: 15%; 
+            
+        }*/
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: green;
+        }
+
+         tr:nth-child(odd){
+            background-color:red;
+        }
+         th{
+            background-color: yellow;
+        }
+
+
+    </style>
+
+
+
 </head>
 <body>
             <!--Etiquetas  h1 hasta h6-->
@@ -70,8 +107,80 @@
         <!--imagenes-->
         <hr/>
         <img src="imagen.jpeg" width="100" height="100" alt="Esto es manejo de imagen"> <br/>
-        <img src="https://placekitten.com/200/300" alt="Esto es manejo de imagen desde una pagina">
+        <img src="https://placekitten.com/200/300" alt="Esto es manejo de imagen desde una pagina"> <br/>
 
+        <!--enlaces-->
+        <a href="https://www.google.com">Ir a google</a> <br/><br/>
+        <a href="https://www.google.com"> <img src="imagen.jpeg" width="100" height="100" alt="Esto es manejo de imagen"> </a> <br/>  
+        
+        <!--cargar el link en otra pestaña con TARGET-->
+        <a href="https://www.google.com" target="_blank">Ir a google</a> <br/><br/>
+
+        <!--LISTAS 
+            DES-ORDENADAS-->
+        <ul>
+            <li><h4>Item 1</h4> </li>
+            <li><h4>Item 2</h4> </li>
+            <li><h4>Item 3</h4> </li>
+            <li><h4> <a href="https://www.google.com" target="_blank">Ir a google</a></h4> </li>
+            <li><h4>Item 5</h4> </li>
+        </ul>
+
+        <!--Lista ordenada-->
+        <ol>
+            <li>Amarillo</li>
+            <li>Azul</li>
+            <li>Rojo</li>
+            <li>Verde</li>
+            <li>Morado</li>
+        </ol>
+
+
+        <!-- TABLAS 
+        tr filas
+        <table border="5">-->
+        <table>
+            <tr>
+                <!--   UNION DE COLUMNAS-->
+                <th colspan="4" align="center">TABLA PRINCIPAL</th>
+                
+            </tr>
+
+            <tr>
+                <!--   UNION DE FILAS
+                <th rowspan="2" align="center">Administradores</th>
+                -->
+            </tr>
+            
+
+            <tr>
+                <!--   th columnas y encabezado-->
+                <th align="center">Nombres</th>
+                <th align="center">Apellidos</th>
+                <th align="center">Correo</th>
+                <th align="center">Tipo de usuario</th>
+            </tr>
+
+            
+
+            <tr>
+                <!-- TD LLENAR DATOS-->
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>Perez@gmail.com</td>
+                <th rowspan="2" >Administradores</th>
+            </tr>
+            <tr>
+                <td>Faber</td>
+                <td>Castillo</td>
+                
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Miramag</td>
+            </tr>
+        </table>
+        
 
 </body>
 </html>
